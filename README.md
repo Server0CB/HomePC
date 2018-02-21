@@ -1,4 +1,4 @@
-[![Join the chat at https://discord.gg/26SyYKp]()]
+https://discord.gg/26SyYKp
 
 
 # HomePC
