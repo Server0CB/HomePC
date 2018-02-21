@@ -27,3 +27,4 @@ EOT
 bind R source-file ~/.tmux.conf
 
 echo "--- finished ---"tmux
+
