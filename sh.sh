@@ -1,9 +1,8 @@
-#Install des dépandance
-echo "Instalation des dépandance"
-apt-get -y install wget tar libevent-dev libncurses-dev build-essential zsh
+#Install des d  pandance
+echo "Instalation des d  pandance"
+apt-get -y install wget tar libevent-dev libncurses-dev build-essential zsh gcc curl git
 #Install Oh-my-zsh
-echo "install oh-my-zsh"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 ##Install tmux
 echo "Install tmux"
 VERSION=2.6
@@ -14,7 +13,7 @@ rm -f tmux-${VERSION}.tar.gz
 cd tmux-${VERSION}
 ./configure
 make
-sudo make install
+make install
 cd -
 rm -rf /usr/local/src/tmux-*
 mv tmux-${VERSION} /usr/local/src
@@ -26,5 +25,7 @@ set -g mouse on
 EOT
 bind R source-file ~/.tmux.conf
 
-echo "--- finished ---"tmux
+echo "install oh-my-zsh"
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+echo "--- finished ---"tmux
